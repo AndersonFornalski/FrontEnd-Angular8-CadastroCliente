@@ -15,6 +15,6 @@ export class Cliente{
     celular:String;
     email:String;
     vendedor:String
-    observacao: String;
+    observacao: String; 
     
 }
