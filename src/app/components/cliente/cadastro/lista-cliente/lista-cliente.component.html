@@ -19,11 +19,11 @@
       <tr *ngFor="let cli of clientes">
         <td>{{cli.id}}</td>
         <td>{{cli.nomeComp_razao}}</td>
-        <td>{{cli.cnpj}}</td>
+        <td>{{cli.cnpj | mask: '00.000.000/0000-00'}}</td>
         <td>{{cli.endereco}}</td>
         <td>{{cli.numero}}</td>
         <td>{{cli.uf}}</td>
-        <td>{{cli.fixo}}</td>
+        <td>{{cli.fixo | mask: '( 00 ) 0000-0000'}}</td>
         <td>{{cli.email}}</td>
         <td>{{cli.vendedor}}</td>
         <td>
