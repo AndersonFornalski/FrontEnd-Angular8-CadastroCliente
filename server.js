@@ -3,7 +3,7 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static("/ProjetoEntrevistCadastroCliente/dist/ProjetoEntrevistCadastroCliente"));
+app.use(express.static("/home/theblackred/Documents/Angular/ProjetoEntrevistCadastroCliente/dist/ProjetoEntrevistCadastroCliente"));
 
 app.get('/*', function(req, res){
     res.sendFile(path.join('/home/theblackred/Documents/Angular/ProjetoEntrevistCadastroCliente/dist/ProjetoEntrevistCadastroCliente/index.html'));
