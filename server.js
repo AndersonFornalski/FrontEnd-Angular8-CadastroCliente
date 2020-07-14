@@ -1,14 +1,16 @@
 const express = require("express");
-const path = require("path");
+const PORT = process.env.PORT || 4202;
 
 const app = express();
 
-app.use(express.static("/home/theblackred/Documents/Angular/ProjetoEntrevistCadastroCliente/dist/ProjetoEntrevistCadastroCliente"));
+app.use(express.static(__dirname + "/dist/ProjetoEntrevistCadastroCliente"));
 
 app.get('/*', function(req, res){
-    res.sendFile(path.join('/home/theblackred/Documents/Angular/ProjetoEntrevistCadastroCliente/dist/ProjetoEntrevistCadastroCliente/index.html'));
+    res.sendFile(__dirname + '/dist/ProjetoEntrevistCadastroCliente/index.html');
 });
 
-app.listen(process.env.PORT || 8081),function(){
-    console.log("rodando na porta 8081")
-}
+app.listen(PORT,()=>{
+    console.log("Rodando servidor na porta 4202")
+})
+
+///home/theblackred/Documents/Angular/ProjetoEntrevistCadastroCliente
