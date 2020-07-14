@@ -10,8 +10,8 @@ export class ClienteService {
 
   constructor(private http: HttpClient) { }
 
-   private apiUrl = "http://localhost:8094/cliente";
-
+   private apiUrl = "https://spring-projeto-cadastro.herokuapp.com/cliente"
+  
 
   listarClientes(): Observable<any>{
     return this.http.get(`${this.apiUrl}`);     
