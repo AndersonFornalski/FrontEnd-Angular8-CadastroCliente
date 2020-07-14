@@ -7,6 +7,7 @@ export class Cliente{
     fundacao: String;
     codigo_nota_fiscal: String;
     endereco: String;
+    cep: String;
     numero:Number;
     bairro: String;
     cidade: String;
