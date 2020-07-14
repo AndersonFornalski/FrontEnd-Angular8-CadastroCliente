@@ -9,4 +9,6 @@ app.get('*', function(req, res){
     res.sendFile(path.join(__dirname + 'dist/ProjetoEntrevistCadastroCliente/index.html'));
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 4201),function(){
+    console.log("rodando na porta 4201")
+}
